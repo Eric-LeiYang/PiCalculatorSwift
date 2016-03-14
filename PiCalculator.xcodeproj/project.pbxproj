@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5846C041BEADE34004B1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C031BEADE34004B1E26 /* AppDelegate.swift */; };
+		F5846C061BEADE34004B1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C051BEADE34004B1E26 /* ViewController.swift */; };
+		F5846C091BEADE34004B1E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5846C071BEADE34004B1E26 /* Main.storyboard */; };
+		F5846C0C1BEADE34004B1E26 /* PiCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5846C0A1BEADE34004B1E26 /* PiCalculator.xcdatamodeld */; };
+		F5846C0E1BEADE34004B1E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5846C0D1BEADE34004B1E26 /* Assets.xcassets */; };
+		F5846C111BEADE34004B1E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5846C0F1BEADE34004B1E26 /* LaunchScreen.storyboard */; };
+		F5846C1C1BEADE34004B1E26 /* PiCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C1B1BEADE34004B1E26 /* PiCalculatorTests.swift */; };
+		F5846C271BEADE34004B1E26 /* PiCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C261BEADE34004B1E26 /* PiCalculatorUITests.swift */; };
+		F5846C381BEAE2DC004B1E26 /* PiCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C371BEAE2DC004B1E26 /* PiCalculatorModel.swift */; };
+		F5846C3A1BEAE3AC004B1E26 /* PiCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C391BEAE3AC004B1E26 /* PiCalculatorViewModel.swift */; };
+		F5846C3D1BEAE4DD004B1E26 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C3C1BEAE4DD004B1E26 /* Observable.swift */; };
+		F5846C3F1BEAE550004B1E26 /* PiCalculateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C3E1BEAE550004B1E26 /* PiCalculateService.swift */; };
+		F5846C411BEAE56C004B1E26 /* ElapsedTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846C401BEAE56C004B1E26 /* ElapsedTimerService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5846C181BEADE34004B1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5846BF81BEADE34004B1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5846BFF1BEADE34004B1E26;
+			remoteInfo = PiCalculator;
+		};
+		F5846C231BEADE34004B1E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5846BF81BEADE34004B1E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5846BFF1BEADE34004B1E26;
+			remoteInfo = PiCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5846C001BEADE34004B1E26 /* PiCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5846C031BEADE34004B1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5846C051BEADE34004B1E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5846C081BEADE34004B1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5846C0B1BEADE34004B1E26 /* PiCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PiCalculator.xcdatamodel; sourceTree = "<group>"; };
+		F5846C0D1BEADE34004B1E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5846C101BEADE34004B1E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5846C121BEADE34004B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5846C171BEADE34004B1E26 /* PiCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5846C1B1BEADE34004B1E26 /* PiCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCalculatorTests.swift; sourceTree = "<group>"; };
+		F5846C1D1BEADE34004B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5846C221BEADE34004B1E26 /* PiCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5846C261BEADE34004B1E26 /* PiCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiCalculatorUITests.swift; sourceTree = "<group>"; };
+		F5846C281BEADE34004B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5846C371BEAE2DC004B1E26 /* PiCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiCalculatorModel.swift; sourceTree = "<group>"; };
+		F5846C391BEAE3AC004B1E26 /* PiCalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiCalculatorViewModel.swift; sourceTree = "<group>"; };
+		F5846C3C1BEAE4DD004B1E26 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		F5846C3E1BEAE550004B1E26 /* PiCalculateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiCalculateService.swift; sourceTree = "<group>"; };
+		F5846C401BEAE56C004B1E26 /* ElapsedTimerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElapsedTimerService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5846BFD1BEADE34004B1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5846C141BEADE34004B1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5846C1F1BEADE34004B1E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5846BF71BEADE34004B1E26 = {
+			isa = PBXGroup;
+			children = (
+				F5846C021BEADE34004B1E26 /* PiCalculator */,
+				F5846C1A1BEADE34004B1E26 /* PiCalculatorTests */,
+				F5846C251BEADE34004B1E26 /* PiCalculatorUITests */,
+				F5846C011BEADE34004B1E26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5846C011BEADE34004B1E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C001BEADE34004B1E26 /* PiCalculator.app */,
+				F5846C171BEADE34004B1E26 /* PiCalculatorTests.xctest */,
+				F5846C221BEADE34004B1E26 /* PiCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5846C021BEADE34004B1E26 /* PiCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C3B1BEAE471004B1E26 /* Common */,
+				F5846C361BEADE64004B1E26 /* ViewController */,
+				F5846C351BEADE5A004B1E26 /* ViewModel */,
+				F5846C341BEADE4B004B1E26 /* Model */,
+				F5846C031BEADE34004B1E26 /* AppDelegate.swift */,
+				F5846C071BEADE34004B1E26 /* Main.storyboard */,
+				F5846C0D1BEADE34004B1E26 /* Assets.xcassets */,
+				F5846C0F1BEADE34004B1E26 /* LaunchScreen.storyboard */,
+				F5846C121BEADE34004B1E26 /* Info.plist */,
+				F5846C0A1BEADE34004B1E26 /* PiCalculator.xcdatamodeld */,
+			);
+			path = PiCalculator;
+			sourceTree = "<group>";
+		};
+		F5846C1A1BEADE34004B1E26 /* PiCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C1B1BEADE34004B1E26 /* PiCalculatorTests.swift */,
+				F5846C1D1BEADE34004B1E26 /* Info.plist */,
+			);
+			path = PiCalculatorTests;
+			sourceTree = "<group>";
+		};
+		F5846C251BEADE34004B1E26 /* PiCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C261BEADE34004B1E26 /* PiCalculatorUITests.swift */,
+				F5846C281BEADE34004B1E26 /* Info.plist */,
+			);
+			path = PiCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		F5846C341BEADE4B004B1E26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C371BEAE2DC004B1E26 /* PiCalculatorModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F5846C351BEADE5A004B1E26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C391BEAE3AC004B1E26 /* PiCalculatorViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5846C361BEADE64004B1E26 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C051BEADE34004B1E26 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F5846C3B1BEAE471004B1E26 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F5846C3C1BEAE4DD004B1E26 /* Observable.swift */,
+				F5846C3E1BEAE550004B1E26 /* PiCalculateService.swift */,
+				F5846C401BEAE56C004B1E26 /* ElapsedTimerService.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5846BFF1BEADE34004B1E26 /* PiCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5846C2B1BEADE34004B1E26 /* Build configuration list for PBXNativeTarget "PiCalculator" */;
+			buildPhases = (
+				F5846BFC1BEADE34004B1E26 /* Sources */,
+				F5846BFD1BEADE34004B1E26 /* Frameworks */,
+				F5846BFE1BEADE34004B1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiCalculator;
+			productName = PiCalculator;
+			productReference = F5846C001BEADE34004B1E26 /* PiCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5846C161BEADE34004B1E26 /* PiCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5846C2E1BEADE34004B1E26 /* Build configuration list for PBXNativeTarget "PiCalculatorTests" */;
+			buildPhases = (
+				F5846C131BEADE34004B1E26 /* Sources */,
+				F5846C141BEADE34004B1E26 /* Frameworks */,
+				F5846C151BEADE34004B1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5846C191BEADE34004B1E26 /* PBXTargetDependency */,
+			);
+			name = PiCalculatorTests;
+			productName = PiCalculatorTests;
+			productReference = F5846C171BEADE34004B1E26 /* PiCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5846C211BEADE34004B1E26 /* PiCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5846C311BEADE34004B1E26 /* Build configuration list for PBXNativeTarget "PiCalculatorUITests" */;
+			buildPhases = (
+				F5846C1E1BEADE34004B1E26 /* Sources */,
+				F5846C1F1BEADE34004B1E26 /* Frameworks */,
+				F5846C201BEADE34004B1E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5846C241BEADE34004B1E26 /* PBXTargetDependency */,
+			);
+			name = PiCalculatorUITests;
+			productName = PiCalculatorUITests;
+			productReference = F5846C221BEADE34004B1E26 /* PiCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5846BF81BEADE34004B1E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Eric;
+				TargetAttributes = {
+					F5846BFF1BEADE34004B1E26 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F5846C161BEADE34004B1E26 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F5846BFF1BEADE34004B1E26;
+					};
+					F5846C211BEADE34004B1E26 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F5846BFF1BEADE34004B1E26;
+					};
+				};
+			};
+			buildConfigurationList = F5846BFB1BEADE34004B1E26 /* Build configuration list for PBXProject "PiCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5846BF71BEADE34004B1E26;
+			productRefGroup = F5846C011BEADE34004B1E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5846BFF1BEADE34004B1E26 /* PiCalculator */,
+				F5846C161BEADE34004B1E26 /* PiCalculatorTests */,
+				F5846C211BEADE34004B1E26 /* PiCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5846BFE1BEADE34004B1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5846C111BEADE34004B1E26 /* LaunchScreen.storyboard in Resources */,
+				F5846C0E1BEADE34004B1E26 /* Assets.xcassets in Resources */,
+				F5846C091BEADE34004B1E26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5846C151BEADE34004B1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5846C201BEADE34004B1E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5846BFC1BEADE34004B1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5846C061BEADE34004B1E26 /* ViewController.swift in Sources */,
+				F5846C3A1BEAE3AC004B1E26 /* PiCalculatorViewModel.swift in Sources */,
+				F5846C0C1BEADE34004B1E26 /* PiCalculator.xcdatamodeld in Sources */,
+				F5846C381BEAE2DC004B1E26 /* PiCalculatorModel.swift in Sources */,
+				F5846C411BEAE56C004B1E26 /* ElapsedTimerService.swift in Sources */,
+				F5846C3D1BEAE4DD004B1E26 /* Observable.swift in Sources */,
+				F5846C3F1BEAE550004B1E26 /* PiCalculateService.swift in Sources */,
+				F5846C041BEADE34004B1E26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5846C131BEADE34004B1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5846C1C1BEADE34004B1E26 /* PiCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5846C1E1BEADE34004B1E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5846C271BEADE34004B1E26 /* PiCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5846C191BEADE34004B1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5846BFF1BEADE34004B1E26 /* PiCalculator */;
+			targetProxy = F5846C181BEADE34004B1E26 /* PBXContainerItemProxy */;
+		};
+		F5846C241BEADE34004B1E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5846BFF1BEADE34004B1E26 /* PiCalculator */;
+			targetProxy = F5846C231BEADE34004B1E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5846C071BEADE34004B1E26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5846C081BEADE34004B1E26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5846C0F1BEADE34004B1E26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5846C101BEADE34004B1E26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5846C291BEADE34004B1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5846C2A1BEADE34004B1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5846C2C1BEADE34004B1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5846C2D1BEADE34004B1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5846C2F1BEADE34004B1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PiCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiCalculator.app/PiCalculator";
+			};
+			name = Debug;
+		};
+		F5846C301BEADE34004B1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PiCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiCalculator.app/PiCalculator";
+			};
+			name = Release;
+		};
+		F5846C321BEADE34004B1E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PiCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PiCalculator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F5846C331BEADE34004B1E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PiCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericyang.PiCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PiCalculator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5846BFB1BEADE34004B1E26 /* Build configuration list for PBXProject "PiCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5846C291BEADE34004B1E26 /* Debug */,
+				F5846C2A1BEADE34004B1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5846C2B1BEADE34004B1E26 /* Build configuration list for PBXNativeTarget "PiCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5846C2C1BEADE34004B1E26 /* Debug */,
+				F5846C2D1BEADE34004B1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5846C2E1BEADE34004B1E26 /* Build configuration list for PBXNativeTarget "PiCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5846C2F1BEADE34004B1E26 /* Debug */,
+				F5846C301BEADE34004B1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5846C311BEADE34004B1E26 /* Build configuration list for PBXNativeTarget "PiCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5846C321BEADE34004B1E26 /* Debug */,
+				F5846C331BEADE34004B1E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5846C0A1BEADE34004B1E26 /* PiCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5846C0B1BEADE34004B1E26 /* PiCalculator.xcdatamodel */,
+			);
+			currentVersion = F5846C0B1BEADE34004B1E26 /* PiCalculator.xcdatamodel */;
+			path = PiCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5846BF81BEADE34004B1E26 /* Project object */;
+}
